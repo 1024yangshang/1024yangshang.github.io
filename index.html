@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园资讯平台</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Microsoft YaHei'; }
+        
+        /* T型布局样式 */
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+            min-height: 500px;
+        }
+        
+        .left {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        
+        .right {
+            flex: 70%;
+            padding: 20px;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        /* 新闻条目样式 */
+        .news-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部标题区 -->
+    <div class="header">
+        <h1>校园资讯平台</h1>
+        <p>及时获取校园最新动态</p>
+    </div>
+    
+    <!-- T型主体内容 -->
+    <div class="container">
+        <!-- 左侧内容 -->
+        <div class="left">
+            <h2>校园新闻</h2>
+            <div class="news-item">
+                <h3>学校举办科技创新大赛</h3>
+                <p>2023-10-15</p>
+                <a href="news1.html">查看详情</a>
+            </div>
+            <div class="news-item">
+                <h3>图书馆新书到馆通知</h3>
+                <p>2023-10-10</p>
+                <a href="news2.html">查看详情</a>
+            </div>
+        </div>
+        
+        <!-- 右侧内容 -->
+        <div class="right">
+            <h2>近期活动</h2>
+            <div class="activity">
+                <h3>校园歌手大赛</h3>
+                <p>时间：2023-11-01</p>
+                <p>地点：学校大礼堂</p>
+                <a href="activity.html">立即报名</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部 -->
+    <div class="footer">
+        <p>&copy; 2023 校园资讯平台 版权所有</p>
+    </div>
+</body>
+</html>

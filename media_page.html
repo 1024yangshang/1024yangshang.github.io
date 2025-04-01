@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多媒体展示页</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        img {
+            border: 3px solid #3498db;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.02);
+        }
+        .caption {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .blog-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .music-notice {
+            font-size: 12px;
+            color: #95a5a6;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 背景音乐（自动播放，循环） -->
+<audio controls>
+    <source src="music.mp3" type="audio/mpeg">
+    <source src="music.ogg" type="audio/ogg">
+    您的浏览器不支持音频元素
+</audio>
+    <h1>欢迎来到我的多媒体展示空间</h1>
+    
+    <!-- 带链接的文字 -->
+    <div class="blog-link">
+        欢迎访问我的<a href="https://www.example.com" target="_blank" style="color: #e74c3c; text-decoration: none;">个人博客</a>，
+        了解更多精彩内容！
+    </div>
+    
+    <!-- 带链接的图片 -->
+    <div class="image-container">
+        <a href="gallery.html">
+            <img src="photo.jpg" alt="美丽的风景图片" width="500">
+            <p class="caption">点击图片进入我的旅行相册</p>
+        </a>
+    </div>
+    
+    <p class="music-notice">背景音乐正在播放中...</p>
+    
+    <!-- 示例：在导航栏添加链接 -->
+<div class="nav">
+    <a href="media_page.html">首页</a>
+    <a href="gallery.html">相册</a>
+    <a href="calculator.html">计算器</a>  <!-- 新增的计算器链接 -->
+</div>
+
+<!-- 或在正文中添加链接 -->
+<p>
+    试试我们的<a href="calculator.html" style="color: #4CAF50; text-decoration: underline;">在线计算器</a>！
+</p>
+</body>
+</html>
